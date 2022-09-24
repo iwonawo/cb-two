@@ -1,0 +1,66 @@
+.wrapper {
+  padding: 1rem;
+}
+
+.wrapper:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.actions {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .actions {
+    text-align: end;
+  }
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #dd4a48;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #dd4a48;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #b03b39;
+  border-color: #b03b39;
+}
+
+.actions .edit {
+  background-color: #676fa3;
+  border: 1px solid #676fa3;
+}
+
+.actions .edit:hover,
+.actions .edit:active {
+  background-color: #484d72;
+  border-color: #484d72;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > li {
+  margin-right: 0.5em;
+  color: #674747;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.pagination > li:hover,
+.pagination > li:active {
+  color: #f96666;
+}
